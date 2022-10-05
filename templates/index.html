@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template is working</title>
 </head>
-<body>
+<body style="background-color:
+#999999 ;">
     <h1>
         Welcome to the text analyazer. Enter your text below
     </h1>
     <form action='/analyze' method='get'>
-        <textarea name='text' style='width: 726px; height: 179px;'></textarea>
+        <textarea name='text' style='width: 726px; height: 179px;'></textarea><br> 
 
-        <input type="checkbox"  name="removepunc">Remove puncuation <br>
-        <button type='submit'>Analyze Text</button>
+        <input type="checkbox" name="punc"> remove punctuations <br>
+        <input type="checkbox" name="caps"> Caps <br>
+        <input type="checkbox" name="newLineRem"> remove new line <br>
+        <input type="checkbox" name="spaceRem"> remove Extra spaces <br>
+        <!-- <input type="checkbox" name="charcount"> count chars <br> -->
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
